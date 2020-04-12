@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector theo nội dung</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//1.tìm phần tử không có nội dung
+			// $('ul li:empty').css('color','red').text('không có nội dung');
+			//2.tìm các phần tử có chứa nội dung "phần"
+			// $("ul li:contains('phần')").css('color','red');
+			//3.tìm tất cả các phần tử có phần tử con hoặc có nội dung
+			// $("ul li:parent").css('color','red');//ngược với empty
+			//4.tìm phần tử có ít nhất phần tử con là selector cho trước
+			$("ul.sub:has('.color_red')").css('border',' 1px solid red');//chưa hiểu lắm
+		});
+	</script>
+	
+	<ul>
+		<li>phần tử 1</li>
+		<li></li>
+		<li>phần tử 3</li>
+		<li>phần tử 4</li>
+		<li>
+			<ul class="sub">
+				<li class="color_red">phần tử 5.1</li>
+				<li>phần tử 5.2</li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li>phần tử 6.1</li>
+				<li>phần tử 6.2</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

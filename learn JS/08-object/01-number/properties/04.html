@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 04</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n = new Number(12);
+		var enter = "<br/>";
+
+
+		// document.write("Phep chia n/string: " + n/"dfdsdf"+ enter);
+
+//isNaN: xem do phai so hay khong
+//NaN: Khong thuc hien duoc
+
+		// document.write("isNaN(12): " + isNaN(12) + enter);
+		// document.write("isNaN(dsa): " + isNaN("dsa") + enter);
+		// document.write("isNaN(1.23552): " + isNaN(1.23552) + enter);
+
+
+		var a = 12;
+		var b = "DADasad0";
+		var result;
+	
+		if (isNaN(a / b)) {
+			result = "Phép toán không thực hiện được";
+		}else{
+			result = a / b;
+		}
+		document.write("Kết quả: " + result);
+	</script>
+</body>
+</html>

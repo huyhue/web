@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm phương thức làm việc với giá trị</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+	<style type="text/css">
+		input{
+			display: block;
+			margin: 5px 0px 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#form_login").submit(function(){
+			//val
+				var str_result;
+				var username = $('#username').val();
+				var password = $('#password').val();
+				
+				//1.
+				// alert(username+'-'+password);  
+
+				//2.
+				$('#val_username').text(username);
+				$('#val_password').text(password);
+
+				// alert($('#val_username').text());
+
+				str_result = "<p>Username: <strong id='val_username'>"+username+"</strong></p><p>Password: <strong id='val_password'>"+password+"</strong></p>"
+				alert(str_result);
+
+				$("#result").html(str_result);
+				// alert($("#result").html());
+
+
+				return false; //hủy reload submit, link của thẻ a
+			});
+		});
+	</script>
+	
+	<h1>Form đăng nhập</h1>
+	<form id='form_login' method="POST">
+		<label for="username">Username: </label>
+		<input type="text" name="" value="" id="username">
+		<label for="password">Password: </label>
+		<input type="password" name="" value="" id="password">
+		<input type="submit" name="sm_logic" value="Đăng nhập">
+		
+		<!-- chỉ áp dụng cho 2 -->
+		<!-- <p>Username: <strong id='val_username'></strong></p>
+		<p>Password: <strong id='val_password'></strong></p>
+		 -->
+		<div id="result">
+			
+		</div>
+	</form>
+</body>
+</html>

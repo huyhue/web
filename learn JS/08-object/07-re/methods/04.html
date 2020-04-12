@@ -1,0 +1,30 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 36: Regular expressions in use</title>
+	<script type="text/javascript">
+		// + match()   :[]
+		// + replace()  :string
+		// + split():   []
+		// + search(): boolean
+		// + exec(): []
+		// + test(): boolean
+
+		var number = "2009 2018 2057 2026 2015 2024 2033 2002 2071 2000";
+
+		var pattern = /\d{3}[0-5]/g;
+		// var pattern = /\d{2}[5-9]\d/g;
+		// var pattern = /\d{2}[357]\d/g;
+		// var pattern = /\d{4}/g;
+		// var pattern = /2024/g;
+		// var pattern = /\d{2}24/g;
+
+		console.log(number.match(pattern));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

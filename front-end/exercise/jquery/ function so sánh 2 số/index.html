@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> function So sánh 2 số</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(function(){
+			function soo(x,y){
+				if(x>y) {return x;}
+				else{ return y;}
+			}
+			$('input').change(function(){
+				var a=$('#num1').val();
+				var b=$('#num2').val();
+
+				$('#result').text(soo(a,b));
+			});
+			
+		});
+	</script>
+
+	<input type="text" name="" value="0" id="num1">
+	<input type="text" name="" value="0" id="num2">
+	<div>Kết quả số lớn hơn là:  <span id="result"></span></div>
+
+
+</body>
+</html>

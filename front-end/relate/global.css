@@ -1,0 +1,19 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.wp-inner{
+	margin: 0px auto;
+	width: 1170px;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}

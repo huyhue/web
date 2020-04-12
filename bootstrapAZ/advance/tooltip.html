@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Tooltip trong Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"
+        >
+          <h1>Tooltip trong Bootstrap (chú thích)</h1>
+          <button class="btn btn-danger mb-3" data-toggle="tooltip" title="Bạn đặt hàng hôm nay để nhân nhiều ưu đãi">Đặt hàng</button>
+          <form action="">
+            <label for="Username">Username:</label> 
+            <input type="text" data-toggle="tooltip" title="Tên đăng nhập có 6 ký tự viết liền không có dấu" name="" id="Username">
+          </form>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil id magnam soluta, inventore enim deserunt ipsum amet accusantium, illo reprehenderit doloribus nam maiores dolor temporibus suscipit earum assumenda sunt corrupti porro, quos libero optio voluptates laboriosam. Aliquid, dolor. Consequuntur numquam recusandae quaerat voluptatem porro nisi excepturi delectus, debitis temporibus ex, Nesciunt et asperiores dicta excepturi ex, unde soluta magnam quisquam, fuga eum praesentium vero architecto consectetur placeat delectus impedit quasi repudiandae pariatur nihil reprehenderit accusamus perferendis. Totam aperiam vel hic. In obcaecati enim veniam reprehenderit animi, itaque ut laborum, consequatur qui, quam ab nemo, assumenda explicabo.</p>
+          <p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title="qui repudiandae quos nam! <strong>Tooltip</strong>  for a" data-placement='left'>sit amet</a> , consectetur adipisicing elit. Vero, modi?</p>
+          <p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title="qui repudiandae quos nam! ipsu <i> Tooltip for </i> a" data-placement='right'>sit amet</a> , consectetur adipisicing elit. Vero, modi?</p>
+          <p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title="qui repudiandae quos nam! Tooltip for a" data-placement='bottom'>sit amet</a> , consectetur adipisicing elit. Vero, modi?</p>
+           <p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title="là một thuật ngữ chuyên sâu trong tin học">sit amet</a> , consectetur adipisicing elit. Vero, modi?</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+          placement:'bottom',
+          trigger:'hover focus',
+          html:true
+        });
+      });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

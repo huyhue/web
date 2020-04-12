@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nguyên tắc khung ảnh</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body>
+	<style type="text/css">
+		.clearfix:after {
+		  visibility: hidden;
+		  display: block;
+		  line-height: 0;
+		  content: ".";
+		  clear: both;
+		  height: 0;
+		}
+		
+		.clearfix { 
+			display: block;
+			clear: both; }
+		/*Khung ảnh*/
+		.thumb{overflow: hidden; display: block;}
+		.thumb img{
+			max-width: 100%;
+			height: auto;}
+		#list-post .thumb{
+			width: 350px;
+			height: 236px;
+		}
+		#wrapper{width: 1080px; margin: 0px auto;}
+		#list-post li{
+			float: left;
+			margin-right: 15px;
+			margin-bottom: 20px;}
+		#list-post li:nth-child(3n){
+			margin-right: 0;}
+	</style>
+	<div id="wrapper">
+		<ul id="list-post" class="clearfix">
+			<li>
+				<a href="" class="thumb">
+					<img src="https://hinhanhdep.vn/wp-content/uploads/2019/07/anh-dep-nhat-the-gioi-ve-thien-nhien.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="" class="thumb">
+					<img src="2.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="" class="thumb">
+					<img src="3.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="" class="thumb">
+					<img src="5.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="" class="thumb">
+					<img src="6.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="" class="thumb">
+					<img src="7.jpg">
+				</a>
+			</li>
+		</ul>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise</title>
+	<script type="text/javascript">
+		var imgList = new Array();
+		imgList[0] = "https://trainghiemso.vn/wp-content/uploads/2019/02/Nghe-nh%E1%BA%A1c-th%C6%B0-gi%C3%A3n-b%E1%BA%B1ng-%C3%A2m-thanh-thi%C3%AAn-nhi%C3%AAn-tr%C3%AAn-Chrome-featured.jpg";
+		imgList[1] = "https://img.lovepik.com/photo/50099/0686.jpg_wh860.jpg";
+		imgList[2] = "http://suygiantinhmach.com/userfiles/image/natural1.jpg";
+		imgList[3] = "https://file.vforum.vn/hinh/2019/01/ta-canh-thien-nhien.jpg";
+		imgList[4] = "https://vkscapcaohcm.gov.vn/asserts/Files/hinh_anh/thiennhien/20180109/00.%20Th%C3%A1c%20B%E1%BA%A3n%20Gi%E1%BB%91c.jpeg?w=640&h=428";
+
+		function showImage(){
+			var index = Math.floor(Math.random() * imgList.length);
+			var result = '<img src ="' + imgList[index] + '">';
+			document.getElementById("area-image").innerHTML = result;
+		}
+
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.content{
+			margin: 10px auto;
+			text-align: center;
+			width: 600px;
+			height: 400px;
+		}
+		.content input[type = button]{
+			padding: 3px 8px;
+			margin-bottom: 10px;
+		}
+		#area-image{
+			border: 3px solid #999;
+			padding: 10px;
+			display: inline-block;
+		}
+		#area-image img{
+			height: 300px;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<input type="button" value="Random image" onclick="showImage();">
+		<div id="area-image">
+			<img src="https://trainghiemso.vn/wp-content/uploads/2019/02/Nghe-nh%E1%BA%A1c-th%C6%B0-gi%C3%A3n-b%E1%BA%B1ng-%C3%A2m-thanh-thi%C3%AAn-nhi%C3%AAn-tr%C3%AAn-Chrome-featured.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>

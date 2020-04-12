@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hiệu ứng show- hide</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		#box{
+			width: 400px;
+			height: 40px;
+			background: #e74c3c;
+			text-align: center;
+			color: #fff;
+			display: none;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#effect-show").click(function(){
+				// $("#box").show(1000,function(){   //1000mili s
+				// 	alert("done...");
+				// });
+
+				$("#box").show(1000);
+			});
+			$("#effect-hide").click(function(){
+				$("#box").hide(1000);
+			});
+			$("#effect-toggle").click(function(){
+				$("#box").toggle(1000);
+			});
+		});
+	</script>
+
+	<h1>Hiệu ứng show - hide trong jquery</h1>
+	<a href="#" id="effect-show">Show</a>
+	<a href="#" id="effect-hide">Hide</a>
+	<a href="#" id="effect-toggle">Toggle</a>
+	<div id="box">
+		BOX
+	</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ipsum praesentium rerum dicta asperiores, quisquam dolore, nihil, totam eveniet aliquam quia placeat, magnam ratione. Pariatur iusto amet est nam architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ipsum praesentium rerum dicta asperiores, quisquam dolore, nihil, totam eveniet aliquam quia placeat, magnam ratione. Pariatur iusto amet est nam architecto!</p>
+</body>
+</html>

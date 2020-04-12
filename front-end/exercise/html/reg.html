@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Đang ký</title>
+</head>
+<body>
+	<h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+	<form>
+		<!-- Họ và tên -->
+		<label for="">Họ  và tên</label><br/>
+		<input type="text" name="fullname" placeholder="Họ và tên"><br/>
+			<!-- Email -->
+		<label for="email">Email</label><br/>
+		<input type="email" name="email"><br/>
+		<!-- Mật khẩu -->
+		<label for="password">Mật khẩu</label><br/>
+		<input type="password" name="password"><br/>
+		<!-- Xác Nhận Mật khẩu -->
+		<label for="dpassword">Xác Nhận Mật khẩu</label><br/>
+		<input type="password" name="dpassword" id="dpassword"><br/>
+		<!-- Birth -->
+		<label for="">Ngày sinh</label><br/>
+		<select name="day">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="4">5</option>
+			<option value="4">6</option>
+			<option value="1">7</option>
+			<option value="1">8</option>
+			<option value="1">9</option>
+			<option value="1">10</option>
+
+		</select>
+		<select name="month">
+			<option value="1">Tháng 7</option>
+			<option value="2">Tháng 3</option>
+		</select>
+		<select name="year">
+			<option value="1">2000</option>
+			<option value="1">1999</option>
+			<option value="1">1998</option>
+			<option value="1">1997</option>
+			<option value="1">1996</option>
+		</select><br/>
+		<!-- Giới tính -->
+		<label for="">Giới tính</label><br/>
+		<input type="radio" value="male" name="gender"> Nam
+		<input type="radio" value="female" name="gender" id="female"><label for="female"> Nữ</label>
+		<input type="radio" value="male" name="gender"> Khác<br/>
+		<!-- submit -->
+		<input type="submit" name="reg" value="Đăng ký">
+		
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 01</title>
+	<script type="text/javascript">
+	
+	//loai bo cac phan tu trung nhau trong mang
+		var arr = Array(1, 2, 3, 1, 6, 3, 4, 7, 2, 3, 1);
+
+		// var newArr
+		// duyet arr => kiem tra phan tu khong ton tai trong newArray (indexOf) => push
+		
+		var newArr = [];
+		for(x in arr){
+			if (newArr.indexOf(arr[x]) < 0) {
+				newArr.push(arr[x]);
+			}
+		}
+
+		document.write("Input: " + arr + "<br/>");
+		document.write("Output: " + newArr + "<br/>");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

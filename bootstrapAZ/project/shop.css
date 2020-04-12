@@ -1,0 +1,76 @@
+.sub-menu{
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	width: 200px;
+	background: green;
+}
+.nav-item:hover>a{
+	background: green;
+	transition: all 0.25s;
+
+}
+li.nav-item:hover>ul.sub-menu{
+	display: block;
+	z-index: 20;
+}
+ul.sub-menu li:hover>a{
+	background: #343a40;
+	display: block;
+	text-decoration: none;
+}
+.carousel-caption{
+    position: absolute;
+    right: 0%;
+    z-index: 10;
+    color: #000000;
+    text-align: center;
+    top: 100px;
+    width: 450px;
+    bottom: 0px;
+    left: 66%;
+}
+.pht-2{
+	height: 105px;
+	text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    display: block;
+}
+:hover .pht-2{
+	transition: all 0.25s;
+	display: block; 
+	cursor: pointer;
+}
+.price-box{
+    font-size: 15px;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.product-all:hover{
+    border: 1px solid #bebebe!important;
+    transition: border 0.25s;
+}
+.giay{
+	position: absolute;
+    bottom: 60px;
+    right: 50px;
+    text-align: center;
+}
+.page-link{
+	color: #dee5ec;
+    background-color: #28a745;
+}
+.list a{
+	color: #f8f9fa;
+}
+#top {
+	      /*tạo chiều rộng vào dài cố định sao cho bằng với hình top.png lấy làm background cho nó*/
+	     width: 50px; height: 50px; 
+	     position: fixed; bottom: 10px; right: 10px; /* đặt vị trí cố định cho nó*/
+	     /*text-indent: -99999px;*/ /*làm mất chữ "back to top"*/
+	     cursor: pointer;  /*để cho nó xuất hiện hình bàn tay khi di chuột vào*/
+	     background: url(top.png) no-repeat 0 0;  /*thiết lập background cho button*/
+	}

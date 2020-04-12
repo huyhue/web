@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sự kiện submit form trong jquery</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		input{
+			display: block;
+			margin-bottom: 15px;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//submit form target
+			$("form#target").submit(function(){
+				var username, password;
+				username = $("#username").val();
+				password = $("#password").val();
+				alert(username+'--'+password);
+				return false;
+			});
+
+			//click other
+			$("#other").click(function(){
+				$("form#target").submit();
+			});
+		});
+	</script>
+	
+	<h1>Sự kiện submit form trong jquery</h1>
+	<form id="target" method="post" action=""> 
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username">
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password">
+		<input type="submit" name="sm_login" value="Login">
+	</form>
+	<a href="" id="other">#other</a>
+
+</body>
+</html>

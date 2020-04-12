@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm selector cơ bản</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//1.chọn bài viết đầu tiên và cho nó màu đỏ
+			// $("ul.list-post :first-child").css('color','red');
+			//2.chọn bài viết cuối cùng và cho nó màu đỏ
+			// $("ul.list-post :last-child").css('color','red');
+			//3.nth-child(index, odd, even, operation)
+			// $("ul.list-post :nth-child(2)").css('color','red');
+			// $("ul.list-post :nth-child(even)").css('color','red');
+			// $("ul.list-post :nth-child(odd)").css('color','red');
+			// $("ul.list-post :nth-child(3n)").css('color','red');
+			//4.chọn phần tử là con duy nhất của phần tử cha
+			$("ul.list-post li:only-child").css('color,''red');
+		});
+	</script>
+
+	<ul class="list-post">
+		<li>Bài viết 1</li>
+		<li>Bài viết 2</li>
+		<li>Bài viết 3</li>
+		<li>Bài viết 4</li>
+		<li>Bài viết 5</li>
+		<li>Bài viết 6</li>
+		<li>Bài viết 7</li>
+		<li>Bài viết 8</li>
+		<li>Bài viết 9</li>
+	</ul>	
+
+	<ul class="list-post">
+		<li>Bài viết 1</li>
+	</ul>		 			
+</body>
+</html>	

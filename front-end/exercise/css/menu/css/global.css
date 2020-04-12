@@ -1,0 +1,10 @@
+.fl-right{
+	float: right;
+}
+.fl-left{
+	float: left;
+}
+#wp-inner{
+	width: 1170px;
+	margin: 0px auto;
+}

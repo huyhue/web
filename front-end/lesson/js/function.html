@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hàm trong javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// //1.hàm kiểm tra số chẵn
+		// function checkEven(n){
+		// 	if (n%2==0) return true;
+		// 	return false;
+		// }
+		// //hàm tính tổng số chẵn từ 1 đến n
+		// function totalEven(n){
+		// 	var total = 0;
+		// 	for (var i = 2; i <= n; i++) {
+		// 		if (checkEven(i)) {
+		// 			total += i;
+		// 		}
+		// 	}
+		// 	return total;
+		// }
+		// //gọi hàm
+		// alert(checkEven(15));
+		// alert(totalEven(4))
+
+		// //2.viết hàm kiểm tra tính chia hết cho k của n(trả về dạng boolean)
+		// function check(n){
+		// 	var k=2;
+		// 	if(n % k == 0) return true;
+		// 	return false;
+		// }
+		// alert(check(6));
+
+		// //3.viết hàm tính tích các số nguyên chia hết cho k trong đoạn từ 1 -n
+		// function check(n){
+		// 	var k=2;
+		// 	if(n % k == 0) return true;
+		// 	return false;
+		// }
+		// function multi(n){
+		// 	var total =1;
+		// 	for (var i = 1; i <= n; i++) {
+		// 		if(check(i)){
+		// 			total *= i;
+		// 		}	
+		// 	}
+		// 	return total;
+		// }
+		// alert(multi(6));
+
+		//viết hàm kiểm tra số nguyên tố
+		function checkPrime(n){
+			var flag = true;//biến cờ hiệu
+			//nếu n bé hơn 2 thì không phải số nguyên tố
+			if (n < 2) {
+				flag = false;
+			}else{
+				//lặp từ 2 đến n-1
+				for (var i = 2; i <= n-1; i++) {
+					if (i % n == 0) {
+						flag = false;
+						break;
+					}
+				}
+			}
+			//kiểm tra biến flag
+			if (flag == true) {
+				document.write(n + " là số nguyên tố");
+			}else{
+				document.write(n + " không là số nguyên tố");
+			}
+
+		}
+		document.write(checkPrime(5));<br/>
+		// //hàm tính tổng các số nguyên tố từ 2 đến n  //PHẦN NÀY SAI CHƯA SỬA
+		// function totalPrime(n){
+		// 	var total = 0;
+		// 		for (var i = 2; i < n-1; i++) {
+		// 			if(checkPrime(i)){
+		// 			total += i;
+		// 		}
+		// 	}
+		// }
+		// document.write(totalPrime(10));
+	</script>
+</body>
+</html>

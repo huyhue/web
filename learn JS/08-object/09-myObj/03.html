@@ -1,0 +1,44 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 03</title>
+	<script type="text/javascript">
+		var enter = "<br/>";
+		//Phương thức và truy cập phương thức
+		this.myValidate2 = function(){
+			//thuộc tính
+			this.data = "This is a test";
+			this.msg = "This is a test 2";
+
+			//phương thức
+			this.getData = getData;
+
+			//xây dựng phương thức
+			function getData(){
+				return this.data;
+			}
+
+
+			this.getMsg = function(){
+				return this.msg;
+			}
+
+		}
+
+		var myObj = new myValidate2();
+
+		document.write("Type of :" + typeof myObj + enter);
+		document.write("Properties - data :" + myObj.data + enter);
+		document.write("Properties - msg :" + myObj.msg + enter);
+		document.write("Methods - data :" + myObj.getData() + enter);
+		document.write("Methods - msg :" + myObj.getMsg() + enter);
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

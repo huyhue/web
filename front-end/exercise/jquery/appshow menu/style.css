@@ -1,0 +1,39 @@
+body{
+	width: 1350px;
+	font-family: arial;
+}
+#header, #footer{
+	background: #e67e22;
+	height: 50px;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 15px;
+}
+#r_content{
+	background: #f1c40f;/*vang*/
+	width: 300px;
+    height: 960px;
+}
+#content{
+	height: 960px;
+}
+.main-menu li a{
+	font-size: 30px;
+    padding: 20px 30px;
+    line-height: 60px;
+    display: block;
+}
+.main-menu li:hover a{
+	background: #f39c12;/*cam*/
+	color: #2ecc71;
+}
+.sub-menu li:hover a{
+	background: #f1c40f;/*vang*/
+	color: #2ecc71;
+}
+.main-menu .sub-menu {
+	display: none;
+}
+.active{
+	display: block;
+}

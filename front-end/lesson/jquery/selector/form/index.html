@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector về form</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	
+	
+	<style type="text/css">
+		form *{
+			display: block;
+			margin-bottom: 10px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//1.Đếm số input trên form  
+			// var num_input = $("form :input").length;
+			// alert(num_input);
+			//2.input text
+			// $("form :text").css('border','1px solid #f00');
+			//2.input password
+			// $("form :password").css('border','1px solid #f00');
+			//3.đếm số lượng phần tử select đã được chọn
+			// var input_select_selector = $("form :selected").length;
+			// alert(input_select_selector);
+			//3.in ra
+			// var input_select_selector = $("form :selected");
+			// input_select_selector.each(function(){         //each: lặp lấy từng phần tử
+			// 	alert($(this).text());
+			// });
+
+			// var input_checkbox_checked = $("form :checkbox:checked");
+			// input_checkbox_checked.each(function(){
+			// 	alert($(this).val());   //val: giá trị
+			// });
+			//4.phần tử disable =>border red
+			// $("form :disabled").css('border','1px solid #f00');
+			// $("form :enabled").css('border','1px solid green');
+
+			
+
+		});
+	</script>
+
+	<form>
+		<input type="text" name="">
+		<input type="password" name="" disabled="disabled">
+		<input type="checkbox" class="hobby" name="hobby" value="game">
+		<input type="checkbox" class="hobby" name="hobby" value="shopping" checked="checked">
+		<input type="checkbox" class="hobby" name="hobby" value="read_book" checked="checked">
+
+		<input type="radio" name="">
+		<textarea></textarea>
+		<button>Nút bấm</button>
+		<input type="submit" name="">
+		<input type="file" name="">
+		<select>
+			<option>Lựa chọn</option>
+			<option>Php</option>
+			<option selected="selected">Jquery</option>
+
+		</select>
+	</form>
+
+
+</body>
+</html>

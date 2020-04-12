@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 02</title>
+	<script type="text/javascript">
+
+		function showMessage(user){
+			document.write("Xin chao <b>" + user + "</b> da ghe tham dien dan cua chung toi!<br/>");
+		}
+
+		// showMessage("Nguyen Van A");
+		// showMessage("Nguyen Van B");
+		// showMessage("Nguyen Van C");
+
+		// Cach 1: goi truc tiep
+		// Cach 2: thong qua 1 su kien nao do tu phia nguoi dung
+		// Cach 3: goi ham tu mot ham khac
+
+		function callShowMessage(){
+			showMessage("Nguyen Van A")
+		}
+
+	</script>
+</head>
+<body>
+	<a href="#" onclick="CallShowMessage()">Xin chao</a>
+</body>
+</html>

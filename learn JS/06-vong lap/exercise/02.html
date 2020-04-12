@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 02</title>
+	<script type="text/javascript">
+		// 		  0                i=0; str ="0", space ="5x" (5-i)  =>result =space+str
+		// 		1 0 1              i=1; str =1 +str+, space ="5x" (5-i)  =>result =space+str
+		// 	  2 1 0 1 2
+		// 	3 2 1 0 1 2 3
+		//   4 3 2 1 0 1 2 3 4
+		// 5 4 3 2 1 0 1 2 3 4 5
+		var i;
+		var n = 5;
+		var str = "";
+		for(i = 0; i <= n; i++){
+			var j = 0;
+			var space = "";
+			while(j < n-1){
+				space += "&nbsp;&nbsp;";
+				j++;
+			}
+			if (i == 0) str = i.toString();
+			else str = i + str + i;
+			document.write(space + str + "<br/>");
+		}//chua lam xong
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

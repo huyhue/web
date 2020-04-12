@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thuộc tính z-index</title>
+</head>
+<body>
+	<style type="text/css">
+		.box{
+		width: 600px;
+		height: 400px;
+		background: #f5f5f5;
+		border: 3px solid #07adc6;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	.child{
+		color: #fff;
+		width:100px;
+		height: 100px;
+		position: absolute;
+	}
+	.child-1{
+		top: 20px;
+	    left: 30px;
+	    background: red;
+	}
+	.child-2{
+		top: 53px;
+	    left: 53px;
+	    z-index: 11;
+	    background: green;
+	}
+	.child-3{
+		    top: 70px;
+		    left: 70px;
+		    background: blue;
+		    z-index: 13;
+	}
+	.child-4{
+		top: 111px;
+	    left: 93px;
+	    background: black;
+	}
+	</style>
+	<div class="box">
+		BOX 1
+		<div class="child child-1">
+			CHILD 1
+		</div>
+		<div class="child child-2">
+			CHILD 2
+		</div>
+		<div class="child child-3">
+			CHILD 3
+		</div>
+		<div class="child child-4">
+			CHILD 4
+		</div>
+	</div>
+</body>
+</html>

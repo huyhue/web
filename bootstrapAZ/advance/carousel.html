@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Carousel SlideShow Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="text-center">Carousel SlideShow Bootstrap</h1>
+
+          <div id="home-slide" class="carousel slide carousel-fade">
+
+            <!-- Thêm thanh indicated- chỉ số slide -->
+            <ol class="carousel-indicators">
+              <li data-target="#home-slide" class="active" data-slide-to="0"></li>
+              <li data-target="#home-slide" data-slide-to="1"></li>
+              <li data-target="#home-slide" data-slide-to="2"></li>
+              <li data-target="#home-slide" data-slide-to="3"></li>
+            </ol>
+
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="https://salt.tikicdn.com/media/upload/2018/03/08/4394ec6a21c756a7846f3655c10fbb1e.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption">
+                  <h5>Laptop gaming</h5>
+                  <p>Máy tính chơi games giá vô cùng rẻ, giúp bạn có trải nghiệm game mượt mà.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://salt.tikicdn.com/media/upload/2018/03/08/bc1f58f2b63d3b5a63deecc6f19bd72f.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption">
+                  <h5>Laptop working</h5>
+                  <p>Với thiêt kế mỏng,nhẹ giúp bạn có thể đem đi di động khi làm việc</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://salt.tikicdn.com/media/upload/2018/03/08/65e8b31138bc1c5bdb361dd3b293498b.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption">
+                  <h5>Macbook</h5>
+                  <p>Cấu hình vô cùng mạnh mẽ, chạy các ứng dụng mạnh một cách nhanh chóng</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://salt.tikicdn.com/media/upload/2018/03/08/85f30661542516e21f98c1450836fa3a.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption">
+                  <h5>Máy tính bàn</h5>
+                  <p>Tuổi thọ máy lâu bền với gian, ổ cứng lớn giúp bạn lưu trữ nhiều</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end carousel inner -->
+
+          <a href="#home-slide" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#home-slide" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+          <!-- end control next prev -->
+
+         
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#home-slide').carousel({
+          interval: 4000,
+          ride:"carousel"
+        });
+      });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

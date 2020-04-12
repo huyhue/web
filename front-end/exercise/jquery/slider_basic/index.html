@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Slider</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var src_img_click, src_img_first;
+			
+			//4.Hiển thị hình ảnh mặc định
+			src_img_first = $("#list-thumb li:first-child img").attr('src');
+			$("#list-thumb li:first-child img").addClass('active');
+			// console.log(src_img_first);
+			$("#show img").attr('src',src_img_first);
+
+
+			//3.Hiển thị hình ảnh được chọn
+			$('#list-thumb li a').click(function(){
+				//Bước 1: Lấy src từ hình ảnh
+				src_img_click = $(this).children('img').attr('src');
+				// console.log(src_img_click);
+				//Bước 2: Gán src lấy được cho src của show
+				$("#show img").attr('src',src_img_click);
+
+				//5.thêm border mỗi khi click vào
+				$('#list-thumb li').removeClass('active');
+				$(this).parent('li').addClass('active');
+
+				return false;
+			});
+		});
+	</script>
+	
+	<div id="wrapper">
+		<h1 style="margin-bottom: 20px;">Basic Slider Product</h1>
+		<div id="wp-slider">
+			<div id="show">
+				<img src="">
+			</div>
+				<!-- end show -->
+
+			<div id="wp-list-thumb">
+				<ul id="list-thumb">
+					<li><a href=""><img src="images/thump-1.png"></a></li>
+					<li><a href=""><img src="images/thump-2.png"></a></li>
+					<li><a href=""><img src="images/thump-3.png"></a></li>
+					<li><a href=""><img src="images/thump-4.png"></a></li>
+				</ul>
+			</div>
+			<!-- end wp-list-thumb -->
+		</div>
+		<!-- end wp-slider -->
+	</div>
+</body>
+</html>

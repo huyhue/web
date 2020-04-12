@@ -1,0 +1,81 @@
+body{
+	font-size: 20px;
+	font-family: "Roboto Condensed";
+	line-height: 22px;
+}
+#header{
+	background: #2bbc9b;
+
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    clear: both;
+    display: block;
+}
+.fl_l{
+	float: left;
+}
+.fl_r{
+	float: right;
+}
+#logo{
+	       padding: 10px 0px 7px 215px;
+}
+#main_menu li{
+	float: left;
+	position: relative;
+}
+#main_menu li a{
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+	padding: 32px 43px;
+	
+}
+#main_menu>li.active>a, #main_menu>li:hover>a{
+	background: #24a085;
+	transition: all 0.25s;
+}
+#main_menu .sub_menu li{
+	float: none;
+}
+#main_menu .sub_menu{
+	display: none;
+	position: absolute;
+	width: 240px;
+	background:  #2bbc9b;
+	left: 100%;
+	top: 0px;
+}
+#main_menu>li>.sub_menu{
+	top: 81px;
+	left: 0px;
+}
+#main_menu .sub_menu li a{
+	position: relative;
+	font-size: 18px;
+	padding:  16px 28px 17px;
+	border-top: 1px solid #fff;
+}
+#main_menu .sub_menu li a:after{
+	content:"\f0da";
+	font-family: FontAwesome;
+	position: absolute;
+	right: 15px;
+	font-size: 16px;
+}
+
+#main_menu li:hover>ul.sub_menu{
+	display: block;
+}
+#main_menu ul.sub_menu li:hover>a{
+	background: #24a085;
+}

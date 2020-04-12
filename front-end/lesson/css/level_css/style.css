@@ -1,0 +1,5 @@
+a{ color: yellow;}
+ul li a{color: green;}
+
+ul#main_menu a{color: blue; }
+ul.list_item a{color: black !important; }

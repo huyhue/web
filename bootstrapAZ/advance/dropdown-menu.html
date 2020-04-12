@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Dropdown Menu Bootstrap</title>
+  </head>
+  <body>
+    <style type="text/css">
+      #my-dropdown .dropdown-menu{
+        width: 300px;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <h1 class="text-center">Dropdown Menu Bootstrap</h1>
+          <div class="dropdown float-right" id="my-dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-display="static" data-toggle="dropdown">AVATAR</button>
+            <div class="dropdown-menu dropdown-menu-md-right">
+              <a href="" class="dropdown-item">HÀN QUỐC</a>
+              <a href="" class="dropdown-item">ẤN ĐỘ</a>
+              <a href="" class="dropdown-item">NHẬT BẢN</a>
+
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-header">MORE MENU</div>
+
+              <a href="" class="dropdown-item">THÁI LAN</a>
+              <a href="" class="dropdown-item">CAMPUCHIA</a>
+              
+              <div class="dropdown-divider"></div>
+              <p class="p-4 text-muted">Chào mừng bạn đến với channel youtube của mình. Chúc các bạn có một ngày vui vẻ và hạnh phúc bên người thân của mình nhé. Hẹn gặp lại các bạn ở tập tiếp theo.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#my-dropdown").on('show.bs.dropdown',function(){
+          alert("SHOW");
+        });
+        $("#my-dropdown").on('hide.bs.dropdown',function(){
+          alert("HIDE");
+        });
+      });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

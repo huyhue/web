@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector con cháu hậu duệ</title>
+</head>
+<body>
+	<style type="text/css">
+		a{color: red}
+		#main_menu a{color: blue;}
+		#main_menu .sub-menu a{color: black;}
+	</style>
+	<div id="header">
+		<a href="" id="logo">Logo</a>
+		<ul id="main_menu" class="list_item">
+			<li><a href="#">Trang chủ</a></li>
+			<li><a href="#">Giới thiệu</a></li>
+			<li><a href="#">Sản phẩm</a></li>
+				<ul class="sub-menu">
+					<li><a href="#">Áo</a></li>
+					<li><a href="#">Quần</a></li>
+				</ul>
+		<li><a href="#">Tin tức</a></li>
+		<li><a href="#">Liên hệ</a></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

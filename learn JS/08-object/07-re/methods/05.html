@@ -1,0 +1,32 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 36: Regular expressions in use</title>
+	<script type="text/javascript">
+		// + match()   :[]
+		// + replace()  :string
+		// + split():   []
+		// + search(): boolean
+		// + exec(): []
+		// + test(): boolean
+
+		var email = "tpgiahuy5@gmail.com";
+
+		var otherEmail = "tpgiahuy5@gmail.co";
+		var phoneNumber = "036-252-9468";
+
+		var reg = /^\w+@[a-zA-Z]{3,}\.com$/i;
+		var phoneNumberPattern = /^\d{3}[-\s]*?\d{3}[-\s]?\d{4}$/;
+		
+
+		console.log(reg.test(email));
+		console.log(reg.test(otherEmail));
+		console.log(phoneNumberPattern.test(phoneNumber));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

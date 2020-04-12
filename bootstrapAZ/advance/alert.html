@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Cảnh báo Alert trong bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Cảnh báo Alert trong bootstrap</h1>
+
+          <h3> Cấu trúc của alert</h3>
+          <div class="alert alert-success" role="alert">
+            Cảnh báo đơn giản trong hệ thống
+          </div>
+
+          <h3>Alert Background</h3>
+          <div class="alert alert-primary" role="alert">
+            Cảnh báo đơn giản trong hệ thống
+          </div>
+          <div class="alert alert-secondary" role="alert">
+            Cảnh báo đơn giản trong hệ thống
+          </div>
+          <div class="alert alert-warning" role="alert">
+            Cảnh báo đơn giản trong hệ thống
+          </div>
+          <div class="alert alert-danger" role="alert">
+            Cảnh báo đơn giản trong hệ thống
+          </div>
+          <div class="alert alert-dark" role="alert">
+            Cảnh báo đơn giản trong hệ thống
+          </div>
+          <div class="alert alert-light" role="alert">
+            Cảnh báo đơn giản trong hệ thống
+          </div>
+
+          <h3>Alert link</h3>
+          <div class="alert alert-success" role="alert">
+            Bạn đã thêm vài viết thành công, bạn click <a href="" class="alert-link">vào đây</a> để trở về trang chủ
+          </div>
+          <div class="alert alert-warning" role="alert">
+            Bạn đã thêm vài viết thành công, bạn click <a href="" class="alert-link">vào đây</a> để trở về trang chủ
+          </div>
+
+          <h3>Alert đa nội dung </h3>
+          <div class="alert alert-success alert-dismissible fade show" id="myAlert" role="alert">
+            <h4 class="alert-heading">Thông báo!</h4>
+            Bạn đã thêm vài viết thành công, bạn click <a href="" class="alert-link">vào đây</a> để trở về trang chủ
+            <p>Lorem ipsum <strong>GIAHUY PRODUCTION</strong> dolor sit amet, consectetur adipisicing elit. Reprehenderit excepturi delectus necessitatibus eum eveniet non rem repellendus natus tenetur eaque, pariatur culpa expedita atque minus nesciunt, veniam, molestias in neque.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit excepturi delectus necessitatibus eum eveniet non rem repellendus natus tenetur eaque, pariatur culpa expedita atque minus nesciunt, veniam, molestias in neque.</p>
+            <button class="close" type="button" data-dismiss="alert" arial-label="Close">
+              <span arial-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <h3>Ẩn đi alert</h3>
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            My alert
+            <button class="close" type="button" data-dismiss="alert" arial-label="Close">
+              <span arial-hidden="true">&times;</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('#myAlert').on('closed.bs.alert',function(){
+            alert('Đã ẩn đi alert');
+          });
+          // $('#myAlert').on('close.bs.alert',function(){
+          //   alert('Đã ẩn đi alert');
+          // });
+      });
+    </script>
+    
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

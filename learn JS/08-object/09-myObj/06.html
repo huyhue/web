@@ -1,0 +1,49 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 06</title>
+	<script type="text/javascript">
+		var enter = "<br/>";
+
+		this.myValidate2 = function(value1, value2){
+			//thuoc tinh
+			this.data = value1;                //public
+			this.msg  = value2;                //public
+			var private = "Private test";      //private
+
+			//phuong thuc
+			this.getData = getData;
+			this.getMsg = getMsg;
+			this.getPrivate = getPrivate;
+			this.setData = setData;
+
+			//xay dung phuong thuc
+			function getData(){
+				return this.data;
+			}
+			function getMsg(){
+				return this.msg;
+			}
+			function getPrivate(){
+				return this.private;
+			}
+			function setData(val){
+				this.data = val;
+			}
+
+		}
+
+		var myObj = new myValidate2("Javascript",500);
+
+		document.write("Properties - data - first :" + myObj.data + enter);
+		myObj.setData("Jquery");
+		document.write("Properties - data - second :" + myObj.data + enter);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

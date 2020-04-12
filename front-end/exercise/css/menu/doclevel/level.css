@@ -1,0 +1,65 @@
+body{
+	font-size: 20px;
+	font-family: Roboto Condensed;
+	line-height: 22px;
+}
+#header{
+	background: #2bbc9b;
+}
+#logo{
+	padding: 10px 0px;
+	display: block;
+}
+#header .wp-inner{
+	position: relative;
+	width: 960px;
+	margin: 0px auto;
+}
+#main-menu{
+	position: absolute;
+	top: 86px;
+	left: 0px;
+	width: 280px;
+}
+#main-menu li{
+	position: relative;
+}
+#main-menu li a{
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+	padding: 20px 38px 20px;
+	background: #2bbc9b;
+	border-top: 1px solic #fff;
+}
+#main-menu>li.active>a, #main-menu>li:hover>a{
+	background: #24a085;
+	transition: all 0.25s; 
+}
+/*style content*/
+#slider{
+	background:#95c0d0;
+	height:425px;
+}
+
+#main-menu .sub-menu{
+	position: absolute;
+	display: none;
+	width: 280px;
+	background:#2bbc9b;
+	left: 100%;
+	top: 0;
+}
+#main-menu .sub-menu li a:after{
+	content:"\f0da";
+	font-family: FontAwesome;
+	position: absolute;
+	right: 15px;
+	font-size: 16px;
+}
+#main-menu li:hover>.sub-menu{
+	display: block;
+}
+#main-menu ul.sub-menu li:hover>a{
+	background: #24a085;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CÁC VIDEO HAY</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			// khi click vào menu cấp 1 của menu
+			// nếu menu đang active (đang show .sub-menu)
+			// ẩn .sub-menu
+			// bỏ trạng thái active
+			// else ẩn tất cả sub-menu đang hiển thị
+			// hiển thị sub-menu hiện thời
+			// cập nhật lại trạng thái active vào li vừa click
+
+			$('.main-menu>li').click(function(){
+
+				if($(this).hasClass('active')){
+					$(this).children('.sub-menu').slideUp();
+					$(this).removeClass('active');
+				}else{
+					$('.sub-menu').slideUp();
+					$(this).children('.sub-menu').slideDown();
+					$('.main-menu>li').removeClass('active');
+					$(this).addClass('active');
+				}
+				return false;
+			});
+		});
+
+	</script>
+
+
+	<div id="wrapper">
+		<div id="header">
+			<h1 style="text-align: center; font-size: 40px; height: 70px;">CHÀO MỪNG CÁC BẠN ĐẾN VỚI CHANNEL CỦA MÌNH</h1>
+		</div>
+		<div id="content">
+			<div id="r_content">
+				<ul class="main-menu">
+					<li><a href="">Du lịch</a>
+						<ul class="sub-menu">
+							<li><a href="">Miền Tây</a></li>
+							<li><a href="">Miền Trung</a></li>
+							<li><a href="">Miền Bắc</a></li>
+						</ul>
+					</li>
+					<li><a href="">Cuộc sống</a>
+						<ul class="sub-menu">
+							<li><a href="">Trải nghiệm</a></li>
+							<li><a href="">Chia sẽ</a></li>
+							<li><a href="">Gian khó</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div id="footer">
+			<p>Thông tin liên lạc: 0362529468</p>
+		</div>
+	</div>
+</body>
+</html>

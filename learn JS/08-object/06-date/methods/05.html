@@ -1,0 +1,31 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 05</title>
+	<script type="text/javascript">
+	/*
+	su dung ham parse de tinh toan so nam tu thoi diem truyen vao so voi 01/01/1970
+	chuyen tu milisecond => nam
+
+	1 nam = 365 ngay
+	1 ngay = 24 gio
+	1 gio = 60 phut
+	1 phut = 60 s
+	1 s = 1000 miligiay
+	=> 1 nam = 365*24*60*60*1000
+	*/
+	
+		var distance = new Date.parse("March 14, 2013");   
+		var enter = "<br/>";
+		var yearMili = 365*24*60*60*1000;
+
+		document.write("Số năm: " + Math.round((distance / yearMili)) + enter);
+	</script>
+	
+</head>
+<body>
+
+</body>
+</html>

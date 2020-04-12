@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm phương thức làm việc về Class</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+	<style type="text/css">
+		.highlight{
+			color: red;
+			background: yellow;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('p').click(function(){
+				//1.chọn có highlight
+				// $(this).addClass('highlight');  //this: kích từng cái của p
+				
+				//2.chỉ chọn 1 thẻ p thôi
+				if (!$(this).hasClass('highlight')){
+					$('p').removeClass('highlight');
+					$(this).addClass('highlight');
+					}
+				
+				//3.giống như công tắc đèn. Nhấn là có highlight, nhấn là tắc highlight
+				// $('p').removeClass('highlight');
+				// $(this).toggleClass('highlight');
+			});
+		});
+	</script>
+	
+	<p>Đoạn văn bản số 1</p>
+	<p>Đoạn văn bản số 2</p>
+	<p>Đoạn văn bản số 3</p>
+	<p>Đoạn văn bản số 4</p>
+	<p>Đoạn văn bản số 5</p>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sự kiện resize trong jquery</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<style type="text/css">
+
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).resize(function(){
+				 var size_width=$(window).width();
+				 var size_height=$(window).height();
+
+				$('#size_width strong#result').text(size_width+'px');
+				$('#size_height strong#result1').text(size_height+'px');
+
+			});
+		});
+
+	</script>
+	
+	<h1>Sự kiện resize trong jquery</h1>
+	<p id="size_width">Độ rộng trình duyệt: <strong id="result"></strong></p>
+	<p id="size_height">Độ cao trình duyệt: <strong id="result1"></strong></p>
+
+</body>
+</html>

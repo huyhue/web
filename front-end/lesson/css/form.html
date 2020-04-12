@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form trong website</title>
+</head>
+<body>
+<h1>Đăng kí thành viên</h1>
+	<form>
+		<!-- Họ và tên -->
+		<label for="">Họ tên</label><br/>
+		<input type="text" name="fullname" placeholder="Họ và tên"><br/>
+		<!-- Tên đăng nhập -->
+		<label for="username">Tên đăng nhập</label><br/>
+		<input type="text" name="username"><br/>
+		<!-- Mật khẩu -->
+		<label for="password">Mật khẩu</label><br/>
+		<input type="password" name="password"><br/>
+		<!-- Email -->
+		<label for="email">Email</label><br/>
+		<input type="email" name="email"><br/>
+		
+		<!-- Giới tính -->
+		<label for="">Giới tính</label><br/>
+		<input type="radio" value="male" name="gender"> Nam<br/>
+		<input type="radio" value="female" name="gender" id="female"><label for="female"> Nữ</label><br/>
+		<input type="radio" value="male" name="gender"> Khác<br/>
+		<!-- Birth -->
+		<label for="">Ngày sinh</label><br/>
+		<select name="birth">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="4">5</option>
+			<option value="4">6</option>
+			<option value="1">7</option>
+			<option value="1">8</option>
+			<option value="1">9</option>
+			<option value="1">10</option>
+
+		</select><br/>
+		<!-- hobby -->
+		<label for="">Sở thích</label><br/>
+		<input type="checkbox" name="hobby[]" value="travel" id="travel"><label for="travel">Du lịch</label><br/>
+		<input type="checkbox" name="hobby[]" value="shopping" id="shopping"><label for="shopping">Shopping</label><br/>
+		<input type="checkbox">watching television <br/>
+		<!-- passion -->
+		<label for="passion">Mơ ước</label><br/>
+		<textarea rows="10" cols="50" name="passion" id="passion"></textarea><br/>
+		<!-- submit -->
+		<input type="submit" name="reg" value="Đăng ký">
+		<button name="login"> Đăng nhập</button>
+
+	</form>
+</body>
+</html>

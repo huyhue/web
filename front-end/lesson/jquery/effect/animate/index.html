@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo hoạt cảnh bằng animate trong jquery</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		#wrapper{
+			position: relative;
+			width: 960px;
+			margin: 0px auto;
+		}
+		#box{
+			width: 400px;
+			height: 40px;
+			background: #e74c3c;
+			text-align: center;
+			color: #fff;
+			position: absolute;
+			top: 100px;
+			left: 0px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#effect-animate").click(function(){
+				$("#box").animate({
+					width: '100px',
+					padding: '100px',
+					left: '500px'
+				},
+				1000,function(){ alert("done task...");}
+				);
+			});
+		});
+	</script>
+
+	<h1>Tạo hoạt cảnh bằng animate trong jquery</h1>
+	
+	<a href="#" id="effect-animate">Animate</a>
+	
+	<div id="box">
+		BOX
+	</div>
+
+</body>
+</html>
