@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+.big-background{
+    width: 100vw;
+    /* height: 100vh; */
+    position: relative;
+}
+.first{
+    height: 50px;
+    color: white;
+    background: #f37022;
+}
+.first p{
+    padding-top: 13px;
+    padding-left: 100px;
+    float: left;
+}
+.first .first-l{
+    float: right;
+    padding-top: 9px;
+    padding-right: 63px;
+}
+.fas {
+    font-weight: 900;
+    padding-top: 24px;
+    color: #f38a07;
+}
+.nav-pof{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: #f4f3f9;
+    height: 110px;
+    width: 100vw;
+    transition: 0.4s;
+}
+.nav-pof.nav-change {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0px;
+    height: 80px;
+    font-size: 14px !important;
+}
+.nav-pof.nav-change img{
+    height: 80px;
+}
+
+.nav-pof p {
+    color: rgb(255, 87, 34);
+    padding: 30px 10px;
+    /* size: 44px; */
+    font-size: 24px;
+}
+
+.nav-pof p:hover {
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid rgb(255, 87, 34);
+}
+.nav-pof p:active{
+    color: yellow;
+    background: none;
+}
+.image{
+    margin-left: 90px;
+    margin-right: 35px;
+}
+.image1{
+    background-image: url("https://fpteducationgroup.files.wordpress.com/2015/03/khoi-giao-duc-fpt1.jpg");
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bodyy{
+    width: 100vw;
+    margin-top: 120px;
+    text-align: center;
+}
+#bodyy h1{
+margin-bottom: 40px;
+font-size: 50px;
+}
+.major {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    margin-left: 10%;
+}
+.item{
+    margin-right: 10px;
+    position: relative;
+}
+.item img{
+    border-radius: 15px;
+    box-shadow: 5px 10px #888888;
+    width: 280px;
+}
+.item .iit{
+    position: absolute;
+    bottom: 40px;
+    background-size: cover;
+    height: 60px;
+    width: 100%;
+    background-color: #6f5656;
+    padding: 26px;
+    opacity: 0.8;
+    color: white;
+}
+.item .iit:hover, .iit ul:hover {
+    cursor: pointer;
+    height: 150px;
+    transition: 0.5s;
+    opacity: 1;
+}
+.iit ul{
+    opacity: 0;
+}
+
+#promo{
+	background-image: url("https://dnuni.fpt.edu.vn/wp-content/uploads/2021/01/rate-orange-background.png");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 100px;
+	font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.p-item{
+    flex: 1 0 31%; 
+    margin-top: 35px;
+}
+#boder{
+    height: auto;
+    background-image: linear-gradient(to right, rgba(255,0,0,0),rgb(214 69 69));
+    padding: 120px 50px;
+}
+#boder .h22{
+    text-align: center;
+    color: rgb(51, 102, 103);
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.news{
+    display: flex;
+    flex-wrap: wrap;
+}
+.new-item{
+    flex: 0 4 30%;
+}
+.new-item img{
+    width: 380px;
+}
+.new-item p{
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+.nut{
+    text-align: center;
+    margin-left: 40%;
+    width: 190px;
+    height: 50px;
+    border: 4px solid #ff7c00;
+    border-radius: 20px;
+    color: #ff7c00;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.nut:hover{
+    background-color: #ff7c00;
+    color: whitesmoke;
+}
+.new1 {
+    display: flex;
+    margin: 40px;
+  }
+  .new1 h1{
+      padding-bottom: 40px;
+  }
+  /* Create two equal columns that sits next to each other */
+  .new1-l {
+    margin-right: 60px;
+    opacity: 0;
+  }
+  .new1-l.dilen{
+    animation: cdlen 2s forwards;
+}
+@-webkit-keyframes cdlen{
+    from {transform: translateX(100px);opacity: 0;}
+    to {transform: translateX(0px);opacity: 1;}
+}
+  .new1-l a{
+    text-decoration: none;
+    color: #121213;
+  }
+  span{
+    line-height: 40px;
+  }
+  .new1-l p{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .new1-r {
+    flex: 65%;
+  }
+  .new1-r ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+  }
+  .new1-r ul li{
+    padding-bottom: 15px;
+  }
+  .new1-r ul li a:hover{
+      color: #ff7c00;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+  .new1-r a{
+    text-decoration: none;
+    color: #222321;
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .new2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    /* padding: 15px; */
+    margin-top: 85px;
+  }
+  .new2-item{
+    flex: 0 4 24%;
+    /* width: 200px; */
+    padding: 40px;
+    line-height: 45px;
+    text-align: center;
+    height: 300px;
+    border-radius: 20px;
+    /* padding-left: 5px; */
+    margin-left: 10px;
+  }
+  .ac{
+    background-color: whitesmoke;
+    color: #ff7c00;
+  }
+   .ab{
+    background-color: #ff7c00;
+    color: whitesmoke;
+}
+.video{
+    height: 400px;
+    padding-left: 80px;
+    padding-top: 40px;
+    background-color: rgb(255, 192, 130);
+    /* margin-left: 20px; */
+}
+.v1{
+    margin: 15px;
+    border-radius: 25px;
+    padding-right: 20px;
+    box-shadow: 5px 10px #888888;
+}
+.fott{
+    background-image: url("https://dnuni.fpt.edu.vn/wp-content/uploads/2020/02/bg-footer-1.jpg");
+    background-color: #cccccc;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin: 40px;
+    padding-left: 35px;
+    flex-wrap: wrap;
+}
+.f-item{
+    flex: 0 0 32%;
+    margin-right: 18px;
+    font-size: 20px;
+    color: #f37022;
+}
+.f-item ul{
+    list-style-type: circle;
+    line-height: 38px;
+}
+.f-item ul a{
+    color: #f37022;
+    text-decoration: none;
+}
+.f-item h3{
+    padding-bottom: 10px;
+    font-size: 30px;
+}

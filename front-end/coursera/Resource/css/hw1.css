@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+}
+header {
+    text-align: center;
+    background: #07e4c5;
+}
+h1{
+	color: #e40909;
+	text-transform: uppercase;
+	padding-top: 15px;
+}
+nav a {
+    width: 90px;
+    height: 23px;
+    background: #a0c52d;
+    padding: 10px;
+    margin: 25px;
+    display: inline-block;
+    border-radius: 10px;
+    color: #ea3309;
+}
+
+a.active {
+    background: #fb971b;
+    color: #a06103;
+}
+
+nav a:hover {
+    background: #fb971b;
+    color: #a06103;
+}
+img{
+	width: 20%;
+	height: 200px;
+	padding: 5px;
+	display: inline;
+}
+section.top {
+    text-align: center;
+    padding: 10px;
+}
+h2 {
+    color: #180bda;
+}
+
+p#showmore {
+     color: #180bda;
+     font-weight: bold;
+     cursor: pointer;
+}
+th {
+    background: #ff8d00;
+}
+
+table#team {
+    background: #dc9b58;
+    float: left;
+    display: none;
+}
+table#team tr:hover{
+	background-color: #4e4235;
+}
+table#myform {
+    background: #ffbc00;
+    float: right;
+    display: none;
+}
+
+caption {
+    text-transform: uppercase;
+}

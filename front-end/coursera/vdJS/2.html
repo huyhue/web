@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vd minh hoa</title>
+	<link rel="stylesheet" type="text/css" href="2.css">
+</head>
+<body onload="loadFruits()">
+
+  <button onclick="myFunction()">Add Your Favorite!</button>
+  <p id="fruits"></p>
+
+    <form action="http://www.intro-webdesign.com" method = "GET">
+        <fieldset>
+              <legend>Form Verification</legend>
+  <label for ="fName">First Name:</label>
+              <input type = "text" name = "fName" id = "fName" required><br/>
+            <label for = "lName">Last Name:</label>
+              <input type = "text" name = "lName" id = "lName" required><br/>
+              <label for = "yesNick">Nickname?:</label>
+              <input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange= "nicknameFunction()"/>   <br/>
+                
+  <div id = "nick">
+                    <label for = "nickname">Nickname:</label>
+                    <input type = "text" name = "nickname" id = "nickname"><br/>
+              </div>
+  <input type = "submit" value = "Verify"/>
+ </fieldset>
+</form>
+
+<form action = "https://codepen.io/ColleenEMc/pen/0d5553e00754f2f5668dc58141b2f1da">
+ 
+   <label>Your Name:        <input type="text" id="name" name="name" placeholder = "Your Name" required></label>
+  
+         <label>Preferred email address:<input type="email" id="email_addr" name="email1" value = "me@me.com" required></label>
+
+    <label>Repeat email address:
+        <input type="email" id="email_repeat" name="email2" required onchange="return check()"></label>
+
+  <input type = 'submit' value = "Next" onclick = "return check();">
+  
+  <input type = 'submit' value = "Save" onclick = "return false;">
+</form>  
+
+
+  <script type="text/javascript" src="2.js">
+  </script>
+</body>
+</html>

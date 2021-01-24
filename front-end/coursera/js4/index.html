@@ -3,34 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Project 4</title>
-
+	<script type="text/javascript" src="js/project4.js"></script>
 </head>
-<script type="text/javascript" src="js/project4.js">
-	function billingFunction(){
-		if (document.getElementById('same').checked){
-		      var shippingName =  document.getElementById('shippingName').value;
-		      var shippingZip = document.getElementById('shippingZip').value;
-	      
-		      document.getElementById('billingName').value = shippingName;
-		      document.getElementById('billingZip').value = shippingZip;
-		}
-		else{
-			document.getElementById('billingName').value = "";
-			document.getElementById('billingZip').value = "";
-		}
-}
-</script>
 <style type="text/css">
 	input{
-			border:1px solid black;
-		}
-		input:focus{
-			background-color: #E6E6E6;
-		}
-		fieldset{
-			margin-bottom: 4%;
-}
-
+		border:1px solid black;
+	}
+	input:focus{
+		background-color: #E6E6E6;
+	}
+	fieldset{
+		margin-bottom: 4%;
+	}
 </style>
 <body>
 	<h1>JavaScript Homework</h1>
@@ -50,7 +34,7 @@
 		<fieldset> 
 			<legend>Billing Information</legend>
 			<label for ="billingName">Name:</label>
-			<input type = "text" name = "billName" id = "billingName" required><br/>
+			<input type = "text" name = "billName" id ="billingName" required><br/>
 			<label for = "billingzip">Zip code:</label>
 			<input type = "text" name = "billZip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
 		</fieldset>

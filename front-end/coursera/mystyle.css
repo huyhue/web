@@ -1,0 +1,43 @@
+header{
+	background: aqua;
+	text-align: center;
+	margin-bottom: 15px;
+}
+nav a {
+    padding: 100px;
+    font-size: 25px;
+}
+.left{
+	float: left;
+	padding: 15px;
+	background: aqua;
+	margin-right: 100px;
+	height: 300px;
+}
+.right {
+    background: aqua;
+    font-weight: 300;
+    height: 329px;
+    padding: 5px;
+}
+.left li {
+    text-align: center;
+    background: antiquewhite;
+    padding: 5px;
+    width: 100px;
+}
+.left li:hover{
+    background: blue;
+   
+}
+input,textarea,select {
+    margin-bottom: 10px;
+}
+footer {
+    background: aqua;
+    text-align: center;
+    margin: 20px 0px;
+}
+.ok1{
+	color: blue;
+}

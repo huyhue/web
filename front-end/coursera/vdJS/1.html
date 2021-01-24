@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>May cai vd</title>
+	<link rel="stylesheet" type="text/css" href="1.css">
+</head>
+<body onload="setDate()"  onload="message('LOAD')" onresize="message('RESIZE')">
+		<p> The current date is <span id = "date"></span></p>
+ 
+ <div id="bai2">
+ 	<div id = "message">
+        Hover over an image to display the alt text.
+    </div>
+    
+    <img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "showProperties(this)" onmouseleave = "document.getElementById('message').innerHTML='Hover over an image';">
+    
+    <img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "showProperties(this)" onmouseleave =  "document.getElementById('message').innerHTML='Hover over an image';">
+    
+    <img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "showProperties(this)" onmouseleave =  "document.getElementById('message').innerHTML='Hover over an image';">
+ </div>
+
+ <h1>JavaScript Events - Responding to Events</h1>
+	    <p onclick="message('CLICK')">It is possible to call functions based on Events</p>
+   
+	    <p onmouseover="message('MouseOver')">Click on the paragraph above to trigger an <em>onclick</em> event.  Reload the page to see an onload event</p>
+	    <p id = "output"><p>
+
+
+  <h1>Changing the Style</h1>
+    <p>JavaScript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="openMe()">Open!</button>
+    <button type="button" onclick="closeMe()">Close!</button>
+
+    <p id="demo">Extra details...You can open and close this paragraph using the buttons above.</p>
+
+    <button onclick="document.getElementById('stuff').innerHTML = 'Clicked First Button';">First</button>
+
+        <button onclick="document.getElementById('stuff').innerHTML = 'Clicked Another Button';">Third</button>
+    <p id="stuff">This will change.</p>
+
+
+<h1>JavaScript Date function</h1>
+	<p id="demo1">This is a paragraph.</p>
+	<button type="button" onclick="displayDate()">Display Date</button>
+ <script type="text/javascript" src="1.js">
+ </script>
+</body>
+</html>

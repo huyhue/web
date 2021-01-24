@@ -1,0 +1,32 @@
+body{
+	color: black;
+}
+header{
+	background-color: #bdb7b7;
+	text-align: center;
+}
+h1{
+	color: #d7e40a;
+	text-transform: uppercase;
+}
+nav a{
+	background-color: gray;
+}
+
+img{
+	display: none;
+}
+section{
+	background-color:  #bdb7b7;
+}
+section h2{
+	color: gray;
+	text-transform: uppercase;
+}
+table{
+	margin-left: 40%;
+}
+table th{
+	background-color: #dcb951;
+	text-align: center;
+}
